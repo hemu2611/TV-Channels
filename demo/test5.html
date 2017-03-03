@@ -1,0 +1,335 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+<style>
+body {
+    width: 982px;
+    margin: 50px auto;
+    background-color: lightblue;
+}
+video {
+    max-width: 100%;
+    height: auto;
+}
+div.img {
+    border: 0px solid #ccc;
+}
+
+div.img:hover {
+    border: 0px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 10%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<script>
+         
+   function ChangeVideo(vid)
+ {        
+
+    switch (vid) 
+    {
+          case 1:
+          {
+            document.getElementById("channelname").innerHTML = " SUN TV"; 
+            if ( Hls.isSupported() ) 
+             {
+            var video = document.getElementById('my-video');
+var hls = new Hls();
+              hls.loadSource('http://ipsunvj.channelsiptv.com/sunvjpointtIPTV22jlljf4/sunINsource/chunks.m3u8');
+              hls.attachMedia(video);
+              hls.on(Hls.Events.MANIFEST_PARSED, function() {
+              video.play();
+              });
+            }
+               break;
+            }
+           
+
+          case 2:
+          {
+            document.getElementById("channelname").innerHTML = " VIJAY TV";
+            if ( Hls.isSupported() ) 
+             {
+            var video = document.getElementById('my-video');
+            var hls = new Hls();
+              hls.loadSource('http://ipsunvj.channelsiptv.com/sunvjpointtIPTV22jlljf4/vijayINsource/chunks.m3u8');
+              hls.attachMedia(video);
+              hls.on(Hls.Events.MANIFEST_PARSED, function() {
+              video.play();
+              });
+            }
+                 break;
+            
+         }
+          case 3:
+          {
+            document.getElementById("channelname").innerHTML = " KALAIGNAR TV"; 
+            if ( Hls.isSupported() ) 
+             {
+            var video = document.getElementById('my-video');
+var hls = new Hls();
+              hls.loadSource('http://ch.channelsiptv.com/iptvlivee34543bnn98/kalai/chunks.m3u8');
+              hls.attachMedia(video);
+              hls.on(Hls.Events.MANIFEST_PARSED, function() {
+              video.play();
+              });
+            }
+               break;
+            }
+
+          case 4:
+          {
+            document.getElementById("channelname").innerHTML = "THANTHI TV"; 
+            if ( Hls.isSupported() ) 
+             {
+            var video = document.getElementById('my-video');
+var hls = new Hls();
+              hls.loadSource('http://d30zz3d0a9ty3e.cloudfront.net/httporg/ngrp:thanthi_all/chunklist_b500000.m3u8');
+              hls.attachMedia(video);
+              hls.on(Hls.Events.MANIFEST_PARSED, function() {
+              video.play();
+              });
+            }
+               break;
+            }
+
+          case 5:
+          {
+            document.getElementById("channelname").innerHTML = "TENTKOTTA TV"; 
+            if ( Hls.isSupported() ) 
+             {
+            var video = document.getElementById('my-video');
+var hls = new Hls();
+              hls.loadSource('http://tentkotta-thunderstorm.amagi.com/amagi_hls_data_Tentkotta-Primary/CDN/640x360_1604000/index.m3u8');
+              hls.attachMedia(video);
+              hls.on(Hls.Events.MANIFEST_PARSED, function() {
+              video.play();
+              });
+            }
+               break;
+            }
+          case 6:
+          {
+            document.getElementById("channelname").innerHTML = "K TV"; 
+            if ( Hls.isSupported() ) 
+             {
+            var video = document.getElementById('my-video');
+var hls = new Hls();
+              hls.loadSource('http://ch.channelsiptv.com/india_iptv2345kk22/ktvINDIA/chunks.m3u8');
+              hls.attachMedia(video);
+              hls.on(Hls.Events.MANIFEST_PARSED, function() {
+              video.play();
+              });
+            }
+               break;
+            }
+
+          case 7:
+          {
+            document.getElementById("channelname").innerHTML = "EE TV"; 
+            if ( Hls.isSupported() ) 
+             {
+            var video = document.getElementById('my-video');
+var hls = new Hls();
+              hls.loadSource('http://live.streamjo.com:1935/eetlive/eettv/chunklist_w1720544616.m3u8');
+              hls.attachMedia(video);
+              hls.on(Hls.Events.MANIFEST_PARSED, function() {
+              video.play();
+              });
+            }
+               break;
+            }
+
+          case 8:
+          {
+            document.getElementById("channelname").innerHTML = "JAYA MOVIES"; 
+            if ( Hls.isSupported() ) 
+             {
+            var video = document.getElementById('my-video');
+var hls = new Hls();
+              hls.loadSource('http://ch.channelsiptv.com/india_iptv2345kk22/jayamovieINDIA/chunks.m3u8');
+              hls.attachMedia(video);
+              hls.on(Hls.Events.MANIFEST_PARSED, function() {
+              video.play();
+              });
+            }
+               break;
+            }
+    }
+              
+  }
+  
+</script>
+
+<div class="container">
+<div class ="row">
+  <h3 id="channelname"></h3>
+</div>  
+  <div class="row">   
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<video id="my-video" width="650" controls>
+<source src="#" type="video/mp4">
+</video> 
+  </div>
+</div>
+
+<br>
+<br>
+  <div class="row">
+
+<div class="responsive">
+  <div class="img">
+         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    <a target="_self" href="#"> </div>
+      <img onclick = "return ChangeVideo(1)" src="../images/sun_tv.png" alt="Sun TV" width="100" height="100">
+    </a>  
+    <div class="desc">SUN TV</div>
+
+</div>
+</div>
+
+ 
+<div class="responsive">
+  <div class="img">
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    <a target="_self" href="#"> </div>  
+      <img onclick = "return ChangeVideo(2)" src="../images/vijay_tv.png" alt="Vijay TV" width="100" height="100">
+    </a>
+    <div class="desc">VIJAY TV</div>
+
+</div>
+</div>
+
+
+<div class="responsive">
+  <div class="img">
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    <a target="_self" href="#">
+        </div>
+
+      <img onclick = "return ChangeVideo(3)" src="../images/kalaignar_tv.jpeg" alt="Kalaignar TV" width="100" height="100">
+    </a>
+    <div class="desc">KALAIGNAR TV</div>
+</div>
+</div>
+
+ 
+<div class="responsive">
+  <div class="img">
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    <a target="_self" href="#">
+    </div>
+      <img onclick = "return ChangeVideo(4)" src="../images/thanthi_tv.png" alt="Thanthi TV" width="100" height="100">
+    </a>
+    <div class="desc">Thanthi TV</div>
+  
+</div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    <a target="_self" href="#"> </div>
+      <img onclick = "return ChangeVideo(5)" src="../images/tentkotta_tv.jpg" alt="Tentkotta TV" width="100" height="100">
+    </a>
+    <div class="desc">TENTKOTTA TV</div>
+ 
+</div>
+</div>
+</div>
+
+<div class="row"> 
+<div class="responsive">
+  <div class="img">
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    <a target="_self" href="#"> </div>  
+      <img onclick = "return ChangeVideo(6)" src="../images/k_tv.jpg" alt="KTV" width="100" height="100">
+    </a>
+    <div class="desc">KTV TV</div>
+
+</div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="img">
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    <a target="_self" href="#">
+        </div>
+      <img onclick = "return ChangeVideo(7)" src="../images/ee_tv.png" alt="EE TV" width="100" height="100">
+    </a>
+    <div class="desc">EE TV</div>
+
+</div>
+</div>
+
+ 
+<div class="responsive">
+  <div class="img">
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    <a target="_self" href="#">
+      </div>
+      <img onclick = "return ChangeVideo(8)" src="../images/jayamovies_tv.png" alt="JayaMovies TV" width="100" height="100">
+    </a>
+    <div class="desc">JAYA MOVIES</div>
+  </div>
+</div>
+</div>
+</div>
+ 
+  <script src="../dist/hls.min.js"></script>
+</body>
+</html>
+
+
+

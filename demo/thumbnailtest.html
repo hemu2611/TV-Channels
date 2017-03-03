@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <style>
+  body {
+  position: relative; 
+    background-color: black;
+}
+video {
+    max-width: 100%;
+    height: auto;
+}
+</style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TAMIL CHANNELS</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Tamil</a></li>
+          <li><a href="#">Telugu</a></li>
+          <li><a href="#">Hindi</a></li>
+          <li><a href="#">Sports</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+		
+   
+<!--
+<div class="embed-responsive embed-responsive-4by3">
+ <video id="my-video" class="embed-responsive-item" src="#" width="600" controls ></video>
+
+</div> --> 
+<br/>
+<br/>
+<br/>
+
+<div class="container">
+<div class="row">
+	<div class="col-xs-5 col-xs-5 col-md-6 col-lg-6">
+	<h5 id="channelname"></h5></div>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-lg-8">
+<video id="my-video" width="900em" controls ></video>
+  
+</div>
+<div class="col-md-4 col-lg-4">
+<h4 style="font-color=white;">CHANNELS LIST</h4>	
+ <a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(1)" src="../images/sun_tv.png"  alt="Sun TV" width="75" height="75"> </a>
+
+<a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(2)" src="../images/vijay_tv.png"  alt="Vijay TV" width="75" height="75"> </a>
+
+<a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(3)" src="../images/kalaignar_tv.jpeg"  alt="Kalaignar TV" width="75" height="75"> </a>
+
+<a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(4)" src="../images/thanthi_tv.png"  alt="Thanthi TV" width="75" height="75"> </a>
+
+<a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(5)" src="../images/tentkotta_tv.jpg"  alt="Tentkotta TV" width="75" height="75"> </a>
+
+<a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(6)" src="../images/k_tv.jpg"  alt="K TV" width="75" height="75"> </a>
+
+<a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(7)" src="../images/ee_tv.png"  alt="EE TV" width="75" height="75"> </a>
+
+<a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(8)" src="../images/jayamovies_tv.png"  alt="JayaMovies TV" width="75" height="75"> </a>
+
+
+
+
+<a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(9)" src="../images/jaya_tv.png"  alt="Jaya TV" width="75" height="75"> </a>
+
+<a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(10)" src="../images/adithya_tv.png"  alt="Adithya TV" width="75" height="75"> </a>
+
+<a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(11)" src="../images/siripoli_tv.png"  alt="Siripoli TV" width="75" height="75"> </a>
+
+<a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(12)" src="../images/mv_tv.png"  alt="MV Digital TV" width="75" height="75"> </a>
+
+<a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(13)" src="../images/sunmusic_tv.png"  alt="SunMusic TV" width="75" height="75"> </a>
+
+<a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(14)" src="../images/mk_tv.png"  alt="MK TV" width="75" height="75"> </a>
+
+<a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(15)" src="../images/peppers_tv.png"  alt="Peppers TV" width="75" height="75"> </a>
+
+<a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(16)" src="../images/santhora_tv.png"  alt="Santhora TV" width="75" height="75"> </a>
+
+<a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(17)" src="../images/discoverytamil_tv.png"  alt="Discovery Tamil TV" width="75" height="75"> </a>
+
+<a target="_self" href="#"> <img class="img-thumbnail" onclick = "return ChangeVideo(18)" src="../images/zeetamil_tv.png"  alt="Zee Tamil TV" width="75" height="75"> </a>
+</div>
+  </div>
+</div>
+
+
+  <script src="../dist/hls.js"></script>
+<script src="../js/tvchannels.js"></script>
+</body>
+</html>
